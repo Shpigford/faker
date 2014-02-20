@@ -3,8 +3,12 @@ module Faker
     flexible :company
 
     class << self
+      # def name
+      #   parse('company.name')
+      # end
+      
       def name
-        parse('company.name')
+        fetch('company.name')
       end
     
       def suffix
